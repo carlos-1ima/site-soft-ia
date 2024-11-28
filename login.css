@@ -5,7 +5,6 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
@@ -32,7 +31,9 @@ header img {
 }
 
 header h1 {
+    font-family: "Jura", sans-serif;
     font-size: 22px;
+    margin-left: -8px;
 }
 
 .banner {
@@ -49,21 +50,24 @@ header h1 {
 }
 
 .banner p {
-    font-family: sans-serif;
+    font-family: "Albert Sans", sans-serif;
     font-size: 16px;
+    font-weight: 400;
     color: #fff;
     margin-left: 80px;
 }
 
 .banner .linha-white {
-    font-family: aldrich;
+    font-family: "Aldrich", sans-serif;
     font-size: 42px;
+    font-weight: normal;
     color:#fff;
 }
 
 .banner .linha-black {
-    font-family: aldrich;
+    font-family: "Aldrich", sans-serif;
     font-size: 42px;
+    font-weight: normal;
     color: rgba(0, 0, 0, 0.78);
 }
 
@@ -81,7 +85,7 @@ form {
     gap: 15px;
     background: #0B0A0A;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.);
     font-family: sans-serif;
 }
@@ -133,11 +137,6 @@ form button:hover {
     position: relative;
 }
 
-/* .container-img {
-    position: relative;
-    width: 100%;
-} */
-
 .container-img img {
     position: absolute;
     bottom: 0;
@@ -148,8 +147,69 @@ form button:hover {
     z-index: 2;
 }
 
-/* .img-robo {
-    margin-top: -100px;
-    z-index: 1;
-} */
+footer {
+    background-color: #0B0A0A;
+    color: #fff;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.logo-section h1 {
+    font-family: "Jura", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: -8px;
+}
+
+.contato,
+.endereco {
+    font-family: "Albert Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 2.2;
+}
+
+.contato {
+    position: relative;
+    left: 140px;
+}
+
+.endereco {
+    position: relative;
+    bottom: 30px;
+    right: 100px;
+}
+
+.bi-instagram,
+.bi-twitter-x,
+.bi-facebook {
+    font-size: 22px;
+    color: #fff;
+    padding: 8px;
+    position: relative;
+    left: -9px;
+    top: 5px;
+}
